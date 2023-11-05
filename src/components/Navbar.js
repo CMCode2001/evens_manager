@@ -24,7 +24,7 @@ const Navbar = () => {
                         </div>
                         <button className="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal">
 
-                            <img src={connexion} width={62} height={62}/>
+                            <img src={connexion} width={60} height={60}/>
                         </button>
                     </div>
                 </nav>
