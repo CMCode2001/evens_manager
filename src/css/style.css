@@ -97,6 +97,11 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 
 /*** Navbar Start ***/
+
+#navbarCollapse > button > svg{
+   width: 3em; 
+   height: 3em;
+}
 .nav-bar {
     background-color:#fff3d8;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
@@ -144,14 +149,16 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-primary);
-    color: var(--bs-white);
+    color: var(--bs-primary);
 }
 
 #searchModal .modal-content {
     background-color: rgba(255, 255, 255, .95);
 }
 /*** Navbar End ***/
-
+.img-fluid{
+    display: block ;
+}
 
 /*** Events Start ***/
 .event .tab-class .nav-item a.active {
@@ -174,15 +181,39 @@ h4, h5, h6, .h4, .h5, .h6 {
 .event .event-img:hover .event-overlay {
     opacity: 1;
 }
+.new, .myevent{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 150px; 
+    border-radius: 18px;
+    color: #000000;
+}
+.new{
+    background-color: var(--bs-primary);
+    border: none;
+    margin-right: 10px;
+}
+.myevent{
+    background-color: #fff3d8;
+    border: 2px solid var(--bs-primary);
+    margin-left: 10px;
+}
 /*** Events End ***/
 
 
 /*** service start ***/
-.service .service-item {
+.service-item {
     position: relative;
     height: 100%;
     border-radius: 8px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.texte-S{
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .service-content::after {
@@ -396,8 +427,10 @@ h4, h5, h6, .h4, .h5, .h6 {
 .text-couleur{
     color: var(--bs-primary);
 }
-.container-fluid.footer.py-6.my-6.mb-0.bg-light.wow.bounceInUp{
-    background-color:#fff3d8;
+
+#root > div > div > div.footer-back > div.container-fluid.footer.py-6.my-6.mb-0.bg-light.wow.bounceInUp{
+
+background-color: #fff3d8 !important;
 }
 /*** Footer End ***/
 

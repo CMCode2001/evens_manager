@@ -1,14 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import PreEvens from '../components/PreEvens';
 
-const Prestataires = () => {
+function Events(props) {
     return (
         <div>
             <Navbar /> 
-            <Footer />           
+            <PreEvens />
+            <Footer />
         </div>
     );
-};
+}
 
-export default Prestataires;
+export default Events;

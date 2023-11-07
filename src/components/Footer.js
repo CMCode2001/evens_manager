@@ -1,11 +1,19 @@
 import React from 'react';
 import "../css/bootstrap.min.css";
 import "../css/style.css";
-import { FaFacebookF,FaTwitter,FaInstagram,FaLinkedin } from "react-icons/fa6";
+import menu1 from "../assets/img/menu1.jpg"
+import menu2 from "../assets/img/menu2.jpg"
+import menu3 from "../assets/img/menu3.jpg"
+import menu4 from "../assets/img/menu4.jpg"
+import menu5 from "../assets/img/menu5.jpg"
+import menu6 from "../assets/img/menu6.jpg"
+import { SiSpringboot, SiReact, SiGithub, SiMariadb } from "react-icons/si";
+
+import { FaFacebookF,FaTwitter,FaInstagram,FaLinkedin, FaGithub } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <div >
+        <div className="footer-back">
             <div className="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp " data-wow-delay="0.1s">
                 <div className="container">
                     <div className="row">
@@ -25,29 +33,39 @@ const Footer = () => {
                                         </a>
                                     <a href="#" className="btn btn-primary btn-sm-square rounded-circle">
                                         <FaLinkedin />
+                                    </a> &nbsp;&nbsp;
+                                    <a href="#" className="btn btn-primary btn-sm-square rounded-circle">
+                                        <FaGithub />
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="col-lg-3 col-md-6">
-                            <div className="footer-item">
-                                <h4 className="mb-4">Special Facilities</h4>
-                                <div className="d-flex flex-column align-items-start">
-                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Cheese Burger</a>
-                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Sandwich</a>
-                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Panner Burger</a>
-                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Special Sweets</a>
-                                </div>
-                            </div>
-                        </div> */}
                         <div className="col-lg-3 col-md-6">
                             <div className="footer-item">
-                                <h4 className="mb-4">Contact Us</h4>
+                                <h4 className="mb-4">Nos références !</h4>
                                 <div className="d-flex flex-column align-items-start">
-                                    <p><i className="fa fa-map-marker-alt text-primary me-2"></i> 123 Street, New York, USA</p>
-                                    <p><i className="fa fa-phone-alt text-primary me-2"></i> (+012) 3456 7890 123</p>
-                                    <p><i className="fas fa-envelope text-primary me-2"></i> info@example.com</p>
-                                    <p><i className="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
+                                    {/* <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>W3school</a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>ReactJs - React.Icon </a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Github</a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Spring initializer</a> */}
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Spring initializer <SiSpringboot/> </a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>ReactJs <SiReact/> </a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i> W3school </a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>Github <SiGithub/> </a>
+                                    <a className="text-body mb-3" href=""><i className="fa fa-check text-primary me-2"></i>MariaDB <SiMariadb/> </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className="footer-item">
+                                <h4 className="mb-4">Contacter-nous !</h4>
+                                <div className="d-flex flex-column align-items-start">
+                                    <p><i className="fa fa-map-marker-alt text-primary me-2"></i>  Dakar, Senegal</p>
+                                    <p><i className="fa fa-phone-alt text-primary me-2"></i> +221 33 000 00 00</p>
+                                    <p><i className="fas fa-envelope text-primary me-2"></i> smabess@gmail.com</p>
+                                    <p><i className="fa fa-clock text-primary me-2"></i> 24/24 Hours Service</p>
                                 </div>
                             </div>
                         </div>
@@ -56,22 +74,22 @@ const Footer = () => {
                                 <h4 className="mb-4">Social Gallery</h4>
                                 <div className="row g-2">
                                     <div className="col-4">
-                                        <img src="img/menu-01.jpg" className="img-fluid rounded-circle border border-primary p-2" alt="" />
+                                        <img src={menu1} className="img-fluid rounded-circle border border-primary p-2" alt="" />
                                     </div>
                                     <div className="col-4">
-                                        <img src="img/menu-02.jpg" className="img-fluid rounded-circle border border-primary p-2" alt="" />
+                                        <img src={menu2} className="img-fluid rounded-circle border border-primary p-2" alt="" />
                                     </div>
                                     <div className="col-4">
-                                        <img src="img/menu-03.jpg" className="img-fluid rounded-circle border border-primary p-2" alt="" />
+                                        <img src={menu3} className="img-fluid rounded-circle border border-primary p-2" alt="" />
                                     </div>
                                     <div className="col-4">
-                                        <img src="img/menu-04.jpg" className="img-fluid rounded-circle border border-primary p-2" alt="" />
+                                        <img src={menu4} className="img-fluid rounded-circle border border-primary p-2" alt="" />
                                     </div>
                                     <div className="col-4">
-                                        <img src="img/menu-05.jpg" className="img-fluid rounded-circle border border-primary p-2" alt="" />
+                                        <img src={menu5} className="img-fluid rounded-circle border border-primary p-2" alt="" />
                                     </div>
                                     <div className="col-4">
-                                        <img src="img/menu-06.jpg" className="img-fluid rounded-circle border border-primary p-2" alt="" />
+                                        <img src={menu6} className="img-fluid rounded-circle border border-primary p-2" alt="" />
                                     </div>
                                 </div>
                             </div>

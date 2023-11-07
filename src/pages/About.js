@@ -1,14 +1,14 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
-const Prestataires = () => {
+const About = () => {
     return (
         <div>
             <Navbar /> 
-            <Footer />           
+            <Footer /> 
         </div>
     );
 };
 
-export default Prestataires;
+export default About;
