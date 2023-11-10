@@ -14,6 +14,11 @@
  }
 /*** Spinner End ***/
 
+.boul-lale{
+    font-family: orkney, sans-serif;
+    font-weight: normal;
+
+}
 
 .back-to-top {
     position: fixed;
@@ -98,7 +103,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 /*** Navbar Start ***/
 
-#navbarCollapse > button > svg{
+.btn-search > svg{
    width: 3em; 
    height: 3em;
 }
@@ -129,9 +134,9 @@ h4, h5, h6, .h4, .h5, .h6 {
     margin-left: 8px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
     .navbar .nav-item .dropdown-menu {
-        display: block;
+        display: flex;
         visibility: hidden;
         top: 100%;
         transform: rotateX(-75deg);
@@ -150,6 +155,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-primary);
     color: var(--bs-primary);
+    display: flex;
 }
 
 #searchModal .modal-content {
@@ -187,6 +193,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     width: 150px; 
     border-radius: 18px;
     color: #000000;
+    padding: 0.3em;
 }
 .new{
     background-color: var(--bs-primary);

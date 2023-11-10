@@ -10,6 +10,7 @@ import menu6 from "../assets/img/menu6.jpg"
 import { SiSpringboot, SiReact, SiGithub, SiMariadb } from "react-icons/si";
 
 import { FaFacebookF,FaTwitter,FaInstagram,FaLinkedin, FaGithub } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -19,7 +20,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-3 col-md-6">
                             <div className="footer-item">
-                                <h1 className="text-primary">Sama <span className="text-dark">Bëss</span></h1>
+                                <h1 className="text-primary">Sama <spa className="text-dark">Bëss</spa></h1>
                                 <p className="lh-lg mb-4"> <b>Sama Bëss</b> est la première plateforme de son genre dans l’événementiel qui a pour vocation de regrouper l’ensemble des types de prestation lié à l’organisation d’un événement au SÉNÉGAL …</p>
                                 <div className="footer-icon d-flex">
                                     <a className="btn btn-primary btn-sm-square me-2 rounded-circle" href="">
@@ -102,10 +103,10 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             <span className="text-light">
-                                <a href="#">
+                                <Link to="/">
                                     <i className="fas fa-copyright text-light me-2">
                                     </i>Sama Bëss
-                                </a>
+                                </Link>
                                 , Tous droits réservés.
                             </span>
                         </div>

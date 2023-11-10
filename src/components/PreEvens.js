@@ -2,17 +2,34 @@ import React from 'react';
 import "../css/bootstrap.min.css";
 import "../css/style.css";
 import BoxEvens from './BoxEvens';
+import mariage from "../assets/img/mariage.jpg";
+import magal from "../assets/img/magal.jpeg";
 import menu3 from "../assets/img/menu3.jpg";
+import conference from "../assets/img/conference.jpg";
+import seminaire from "../assets/img/seminaire.jpg";
+import ramadan from "../assets/img/ramadan.jpg"
+
+
+import hbd2 from "../assets/img/hbd2.jpg";
+import gamou from "../assets/img/gamou.jpg";
+
 import { FaPlus } from "react-icons/fa";
 import { HiViewList } from "react-icons/hi";
+import { Link } from 'react-router-dom';
 
 const PreEvens = () => {
     return (
         <div className="container-fluid event py-6">
             <div className="container">
                 <div className="text-center wow bounceInUp" data-wow-delay="0.1s">
-                    <button className='new'><FaPlus />New Event</button>
-                    <button className='myevent'><HiViewList />My Event</button>
+                   <Link to = "/login">
+                        <contain className='new'><FaPlus /> New Event </contain>
+                   </Link>
+                   <Link to = "/login">
+                        <Link to = "/createEvents">
+                             <contain className='myevent'><HiViewList /> My Event</contain>
+                        </Link> 
+                   </Link>
                     <h1 className="display-5 mb-5">Différents types d'événement</h1>
                 </div>
                 <div className="tab-class text-center">
@@ -45,17 +62,15 @@ const PreEvens = () => {
                             <div className="row g-4">
                                 <div class="col-lg-12">
                                     <div class="row g-4">
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
-                                        <BoxEvens nom="Mariage" image={menu3}/>
+                                        <BoxEvens nom="Mariage" image={mariage}/>
+                                        <BoxEvens nom="Magal Touba" image={magal}/>
+                                       
+                                        <BoxEvens nom="Gamou" image={gamou}/>
+                                        <BoxEvens nom="Seminaire" image={seminaire}/>
+                                        <BoxEvens nom="Conférence" image={conference}/>                 
+                                        <BoxEvens nom="Ramadan" image={ramadan}/>
+                                        <BoxEvens nom="Anniversaire" image={hbd2}/>
+                                       
                                     </div>
                                 </div>
                             </div>

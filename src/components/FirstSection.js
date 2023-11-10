@@ -15,10 +15,19 @@ const HeroSection = () => {
                         <h1 className="display-1 mb-4 animated bounceInDown">
                            
                         Dälal ak Jàmm ći  
-                        <span className="text-primary"> <br/>Sama </span> Bëss 
+                        <spa className="text-primary"> <br/>Sama </spa> Bëss 
+                        <p className='boul-lale'>
+                            Vous avez un évènement à célébrer, vous voulez rendre agréable votre cérémonie. 
+                            Donnez goût à votre cérémonie en bénéficiant des services de qualité, d'une équipe de professionnels. <br/>        
+                            <i>
+                            <b>Bienvenue dans Sama Bëss, l'appli qui rassemble ! </b>
+                            </i>
+                        </p>
                         </h1>                      
-                          <Link to ="/" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Je suis Client !</Link>
-                        <Link  to ="/" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Je suis Prestataire !</Link>
+                          <Link to ="/login" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">
+                            Je suis Client !
+                        </Link>
+                        <Link  to ="/login" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Je suis Prestataire !</Link>
                     </div>
                     <div className="col-lg-5 col-md-12">
                         <img src={hero} className="img-fluid rounded animated zoomIn" alt="" />

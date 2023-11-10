@@ -6,6 +6,7 @@ const Prestataires = () => {
     return (
         <div>
             <Navbar /> 
+            <center><h3>Diagne def si yité</h3></center>
             <Footer />           
         </div>
     );
